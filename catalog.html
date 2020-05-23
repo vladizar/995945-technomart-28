@@ -22,6 +22,7 @@
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
 			<a href="#">Равшан Джамшутович</a>
+			<a href="#">Выйти</a>
       <ul>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
@@ -54,13 +55,86 @@
 			<section>
 				<h2>Фильтр:</h2>
 
-				<h3>Цена:</h3>
-					<!--There will be form mark up soon-->
-				<h3>Производители:</h3>
-					<!--There will be form mark up soon-->
-				<h3>Питание:</h3>
-					<!--There will be form mark up soon-->
-				<button>Показать</button>
+				<form action="https://echo.htmlacademy.ru/" method="get">
+					<fieldset>
+						<legend>Цена:</legend>
+
+						<!--IDK how to do this range :(
+						Maybe
+						<button class="left-range-button"></button>
+						<div class="range-center-line"></div>	
+						<button class="right-range-button"></button>
+						similar to rozetka.com?
+						-->
+	
+						<input type="text" name="price-min" id="filter-price-min" value="0" required>
+						<span>-</span>
+						<input type="text" name="price-max" id="filter-price-max" value="30000" required>
+					</fieldset>
+	
+					<fieldset>
+						<legend>Производители:</legend>
+	
+						<ul>
+							<li>
+								<label for="filter-bosch">
+									<input type="checkbox" name="bosch" id="filter-bosch" checked>
+									Bosch
+								</label>
+							</li>
+	
+							<li>
+								<label for="filter-interskol">
+									<input type="checkbox" name="interskol" id="filter-interskol">
+									Interskol
+								</label>
+							</li>
+	
+							<li>
+								<label for="filter-makita">
+									<input type="checkbox" name="makita" id="filter-makita" checked>
+									Makita
+								</label>
+							</li>
+	
+							<li>
+								<label for="filter-dewalt">
+									<input type="checkbox" name="dewalt" id="filter-dewalt">
+									Dewalt
+								</label>
+							</li>
+	
+							<li>
+								<label for="filter-hitachi">
+									<input type="checkbox" name="hitachi" id="filter-hitachi">
+									Hitachi
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+	
+					<fieldset>
+						<legend>Питание:</legend>
+	
+						<ul>
+							<li>
+								<label for="filter-battery">
+									<input type="radio" name="product-power-supply" id="filter-battery" value="battery" checked>
+									Аккумуляторные
+								</label>
+							</li>
+	
+							<li>
+								<label for="filter-network">
+									<input type="radio" name="product-power-supply" id="filter-network" value="network">
+									Сетевые
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+	
+					<button type="submit">Показать</button>
+				</form>
 			</section>
 
 			<section>
@@ -72,7 +146,7 @@
 					<li><a href="#">По функционалу</a></li>
 				</ul>
 
-				<ul><!--Same as social networks names in footer this text will be replaced by arrow icons-->
+				<ul>
 					<li><a href="#">По возрастанию</a></li>
 					<li><a href="#">По убыванию</a></li>
 				</ul>
@@ -101,8 +175,8 @@
 					</li>
 
 					<li>
-						<a href="#">Купить</a>
-						<button>В закладки</button>
+						<button type="button">Купить</button>
+						<button type="button">В закладки</button>
 						<h3>
 							Перфоратор BOSCH
 							BFG 6000
@@ -230,5 +304,17 @@
 				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 		</footer>
+
+		<!--POP UPS-->
+
+		<section>
+			<h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+			<button type="button">Закрыть</button>
+
+			<p>Товар добавлен в корзину!</p>
+
+			<a href="#">Оформить заказ</a>
+			<button type="button">Продолжить покупки</button>
+		</section>
   </body>
 </html>

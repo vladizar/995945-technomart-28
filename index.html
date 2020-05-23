@@ -41,35 +41,43 @@
 
     <main>
       <section>
+        <h2 class="visually-hidden">Промо-блок</h2>
         <article>
-          <h2>Перфораторы</h2>
+          <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
+
+          <a href="catalog.html">Открыть каталог</a>
+        </article>
+
+        <article>
+          <h3>Дрели</h3>
+          <p>Соседям на радость</p>
 
           <a href="#">Открыть каталог</a>
         </article>
 
         <article>
-          <h2>Материалы</h2>
+          <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
         </article>
 
         <article>
-          <h2>Инструмент</h2>
+          <h3>Инструмент</h3>
           <a href="#">На все случаи</a>
         </article>
         
         <article>
-          <h2>Техника</h2>
+          <h3>Техника</h3>
           <a href="#">Для стройки</a>
         </article>
         
         <article>
-          <h2>Скидки 50%</h2>
+          <h3>Скидки 50%</h3>
           <a href="#">На 350 товаров</a>
         </article>
         
         <article>
-          <h2>Доставка</h2>
+          <h3>Доставка</h3>
           <a href="#">Бесплатно</a>
         </article>
       </section>
@@ -100,7 +108,7 @@
           </li>
 
           <li>
-            <img src="img/bosch-bfg6000.jpg" alt="img/bosch-logo.pngПерфоратор BOSCH BFG 6000" width="144" height="128">
+            <img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<h3>
 							Перфоратор BOSCH
 							BFG 6000
@@ -198,6 +206,25 @@
           Ведь мы неплохо заработаем, 
           поднимая его на ваш этаж!
         </p>
+
+        <h3>Гарантия</h3>
+
+        <p>
+          Если купленный у нас товар поломается или заискрит, 
+          а также в случае пожара, спровоцированного его 
+          возгоранием,  вы всегда можете быть уверены в нашей 
+          гарантии. Мы обменяем сгоревший товар на новый. 
+          Дом уж восстановите как-нибудь сами.
+        </p>
+
+        <h3>Кредит</h3>
+
+        <p>
+          Залезть в долговую яму стало проще! 
+          Кредитные консультанты придут вам на помощь.
+        </p>
+
+        <a href="#">Отправить заявку</a>
       </section>
 
       <section>
@@ -232,10 +259,10 @@
         </p>
 
         <a href="https://www.google.com.ua/maps/">
-          <img src="img/google-map.png" alt="Техномарт на карте" width="300" height="158">
+          <img src="img/google-map.png" alt="Карта с указателем местонахождения компании «Техномарт»" width="300" height="158">
         </a>
         
-        <a href="#">Заблудились? Напишите нам</a>
+        <button type="button">Заблудились? Напишите нам</button>
       </section>
     </main>
 
@@ -280,5 +307,37 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
     </footer>
+
+    <!--POP UPS-->
+    <section>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button type="button">Закрыть</button>
+
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" placeholder="Имя Фамилия" id="feedback-name" name="name" required>
+        </p>
+        
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" placeholder="email@example.com" id="feedback-email" name="email" required>
+        </p>
+        
+        <p>
+          <label for="feedback-message">Текст письма:</label>
+          <input type="text" placeholder="В свободной форме" id="feedback-message" name="message" required>
+        </p>
+
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">«Техномарт» на карте</h2>
+      <button type="button">Закрыть</button>
+
+      <img src="img/google-map-big.png" alt="Увеличенная карта с указателем местонахождения компании «Техномарт»" width="970" height="477">
+    </section>
   </body>
 </html>
