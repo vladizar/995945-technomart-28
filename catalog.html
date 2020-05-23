@@ -7,7 +7,10 @@
   <body>
 		<header>
       <a href="index.html"><h1>Техномарт</h1></a>
-      <span>Поиск</span> <!--I think there should be <input>, but the task says do not use forms. So because it is an unknow interactive element I used <span>-->
+			<form action="https://echo.htmlacademy.ru/" method="post">
+				<label for="header-search-field">Поиск:</label>
+				<input type="search" name="search-field" id="header-search-field">
+			</form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 10</a>
       <a href="#">Оформить заказ</a>
@@ -59,13 +62,8 @@
 					<fieldset>
 						<legend>Цена:</legend>
 
-						<!--IDK how to do this range :(
-						Maybe
-						<button class="left-range-button"></button>
-						<div class="range-center-line"></div>	
-						<button class="right-range-button"></button>
-						similar to rozetka.com?
-						-->
+						<label for="filter-price-range" class="visually-hidden">Диапазон стоимости товара</label>
+						<input type="range" name="price-range" id="filter-price-range" min="0" max="36500" value="30000">
 	
 						<input type="text" name="price-min" id="filter-price-min" value="0" required>
 						<span>-</span>
@@ -155,6 +153,8 @@
 			<section>
 				<ul>
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<h3>
 							Перфоратор BOSCH
@@ -165,6 +165,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<h3>
 							Перфоратор BOSCH
@@ -175,7 +177,7 @@
 					</li>
 
 					<li>
-						<button type="button">Купить</button>
+						<a href="#">Купить</a>
 						<button type="button">В закладки</button>
 						<h3>
 							Перфоратор BOSCH
@@ -186,6 +188,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg2000-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
 						<h3>
 							Перфоратор BOSCH
@@ -196,6 +200,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<h3>
 							Перфоратор BOSCH
@@ -206,6 +212,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg2000-3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
 						<h3>
 							Перфоратор BOSCH
@@ -216,6 +224,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg2000-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
 						<h3>
 							Перфоратор BOSCH
@@ -226,6 +236,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<h3>
 							Перфоратор BOSCH
@@ -236,6 +248,8 @@
 					</li>
 
 					<li>
+						<a href="#">Купить</a>
+						<button type="button">В закладки</button>
 						<img src="img/bosch-bfg2000-3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
 						<h3>
 							Перфоратор BOSCH
