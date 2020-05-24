@@ -63,11 +63,11 @@
 						<legend>Цена:</legend>
 
 						<label for="filter-price-range" class="visually-hidden">Диапазон стоимости товара</label>
-						<input type="range" name="price-range" id="filter-price-range" min="0" max="36500" value="30000">
+						<input type="range" name="price-range" id="filter-price-range" min="0" max="36500" step="5" value="30000">
 	
-						<input type="text" name="price-min" id="filter-price-min" value="0" required>
+						<input type="number" name="price-min" id="filter-price-min" min="0" max="36500" value="0" step="5" required>
 						<span>-</span>
-						<input type="text" name="price-max" id="filter-price-max" value="30000" required>
+						<input type="number" name="price-max" id="filter-price-max" min="0" max="36500" value="30000" step="5" required>
 					</fieldset>
 	
 					<fieldset>
