@@ -12,10 +12,12 @@
 	--basic-greylight-dark: #A9A9A9;
 	--basic-background: #F1F5F7;
 	--special-yellow: #FFBF47;
+	--special-yellowlighten: #FFC047;
 	--special-blue: #3BBCE3;
 	--special-lilac: #DC91D8;
 	--special-greenlight: #8ED78F;
 	--special-yellowlight: #FFD180;
+	--special-color-white: #F9F5F0;
 	--color-success: #5FBB2D;
 	--color-error: #BA2732;
 	--color-white: #FFF;
@@ -27,8 +29,14 @@
 	--color-black-extra-light: #212A3A;
 	--color-extralight-grey: #EAEAEA;
 	--color-lightest-grey: #E5E5E5;
-	--color-white-half-transparent: rgba(255, 255, 255, 0.5);
+	--color-white-dark: #F7F3EC;
+	--color-almost-white: #F2F6F8;
+  --color-white-half-transparent: rgba(255, 255, 255, 0.5);
+  --color-white-almost-transparent: rgba(255, 255, 255, 0.3);
+  --color-greylight-almost-transparent: rgba(197, 197, 197, 0.3);
+  --color-greylight-dark-almost-transparent: rgba(169, 169, 169, 0.3);
 	--color-black-mostly-transparent: rgba(0, 0, 0, 0.15);
+	--color-black-almost-transparent: rgba(0, 0, 0, 0.25);
 
 	/* FONTS */
 	--cuprum: Cuprum, Arial, sans-serif;
@@ -128,6 +136,16 @@ a
 	text-transform: uppercase;
 }
 
+.section-title2
+{
+	font-family: var(--cuprum);
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-grey-dark);
+}
+
 .button
 {
 	font-family: var(--cuprum);
@@ -152,6 +170,11 @@ a
 	text-transform: uppercase;
 }
 
+.title-with-button
+{
+  background-color: var(--special-color-white);
+}
+
 /* CUSTOM STYLES */
 
 /* HEADER */
@@ -168,7 +191,8 @@ a
 	color: var(--color-white);
 }
 
-.user-navigation a:active{
+.user-navigation a:active
+{
 	background-color: var(--color-black-light);
 	color: var(--color-white-half-transparent);
 }
@@ -298,6 +322,131 @@ a
 
 /* MAIN index.html CONTENT */
 
+/* PROMO-BLOCK */
+.promo-block
+{
+  color: var(--color-white);
+  font-family: var(--cuprum);
+}
+
+.promo-block h3
+{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-block .button-promo
+{
+	background-color: var(--color-white-almost-transparent);
+}
+
+.promo-block .button-promo:hover
+{
+	background-color: var(--color-greylight-almost-transparent);
+}
+
+.promo-block .button-promo:active
+{
+	background-color: var(--color-greylight-dark-almost-transparent);
+}
+
+.slider .title-with-paragraph
+{
+	background-color: var(--color-black-almost-transparent);
+}
+
+.slider h3
+{
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider p
+{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider .promo-perforators
+{
+  background-color: var(--color-black-extra-light);
+  background-image: url(../img/bg-slider-perforators.jpg);
+  background-repeat: no-repeat;
+}
+
+.slider .promo-drills
+{
+  background-color: var(--color-black-extra-light);
+  background-image: url(../img/bg-slider-drill.jpg);
+  background-repeat: no-repeat;
+}
+
+.promo-block .promo-materials
+{
+  background-color: var(--special-yellow);
+  background-image: url(../img/icon-materials.svg);
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
+}
+
+.promo-block .promo-tool
+{
+  background-color: var(--special-blue);
+  background-image: url(../img/icon-tool.svg);
+  background-repeat: no-repeat;
+  background-position: 194px 34px;
+}
+
+.promo-block .promo-technique
+{
+  background-color: var(--special-lilac);
+  background-image: url(../img/icon-technique.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 31px;
+}
+
+.promo-block .promo-discounts
+{
+  background-color: var(--special-greenlight);
+  background-image: url(../img/icon-discount.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 27px;
+}
+
+.promo-block .promo-delivery
+{
+  background-color: var(--special-yellowlighten);
+  background-image: url(../img/icon-delivery.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
+}
+
+
+/* POPULAR-PRODUCTS */
+/* Empty now */
+
+/* POPULAR-MANUFACTURERS */
+.popular-manufacturers .popular-manufacturers-list
+{
+  list-style: none;
+}
+
+.popular-manufacturers-list .manufacturer-item
+{
+  border: 1px solid var(--color-extralight-grey);
+}
+
+.popular-manufacturers-list .manufacturer-item:hover
+{
+  box-shadow: 0px 4px 20px var(--color-black-mostly-transparent);
+}
+
+.popular-manufacturers-list .manufacturer-item:active
+{
+  opacity: 0.5;
+}
+
 /* SERVICES */
 .services
 {
@@ -332,16 +481,6 @@ a
 	box-shadow: 0px 1px 0px var(--color-white), inset 0px 1px 0px var(--color-white);
 }
 
-.services h3
-{
-	font-family: var(--cuprum);
-	font-weight: normal;
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	color: var(--basic-grey-dark);
-}
-
 /* ABOUT US */
 .about-us ul
 {
@@ -374,7 +513,8 @@ a
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  background-color: var(--color-almost-white);
 }
 
 /* FILTER */
@@ -382,7 +522,8 @@ a
 {
 	font-size: 15px;
 	line-height: 19px;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  border: 0;
 }
 
 .filter ul
@@ -399,7 +540,63 @@ a
 	border: 1px solid var(--color-lightest-grey);
 }
 
-/* CATALOG */
+.price input
+{
+  border: 0;
+  background-color: var(--color-white-dark);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.price .range
+{
+  background-color: var(--color-white-dark);
+}
+
+/* SORT */
+.sort
+{
+  text-transform: uppercase;
+  background-color: var(--color-white-dark);
+}
+
+.filter h2,
+.sort h2
+{
+	font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: var(--color-white-dark);
+}
+
+.sort ul
+{
+  list-style: none;
+}
+
+.sort a
+{
+  color: var(--color-black);
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort a:not(.active):hover
+{
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sort a:active,
+.sort .active
+{
+  color: var(--basic-red);
+  opacity: 1;
+  border: 0;
+}
+
+/* CATALOG (for index.html too)*/
 .items-list
 {
 	list-style: none;
@@ -516,6 +713,12 @@ a
 	border: 1px solid var(--basic-red);
 }
 
+/* A FEW WORDS */
+.few-words
+{
+  background-color: var(--basic-background);
+}
+
 /* FOOTER */
 .footer
 {
@@ -547,12 +750,13 @@ a
 	list-style: none;
 }
 
-.promo-navigation a{
+.promo-navigation a[href]{
 	color: var(--special-yellow);
 }
 
-.promo-navigation a:active{
-	color: var(--special-yellowlight);
+.promo-navigation a[href]:active{
+  color: var(--special-yellowlight);
+  opacity: 0.5;
 }
 
 .footer .footer-bottom
@@ -572,7 +776,7 @@ a
 	color: var(--special-yellow);
 }
 
-.footer-bottom a:active
+.footer-bottom a[href]:active
 {
 	color: var(--basic-red);
 }
