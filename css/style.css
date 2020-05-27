@@ -588,7 +588,7 @@ a
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sort a:active,
+.sort a:not(.active):active,
 .sort .active
 {
   color: var(--basic-red);
