@@ -238,7 +238,10 @@ a
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
-	border: 3px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 13px;
 }
 
 .header .address
@@ -317,7 +320,7 @@ a
 .header .search-field:active,
 .header .search-field:focus
 { 
-	background-color: var(--color-white); 
+  background-color: var(--color-white); 
 }
 
 /* MAIN index.html CONTENT */
@@ -481,6 +484,27 @@ a
 	box-shadow: 0px 1px 0px var(--color-white), inset 0px 1px 0px var(--color-white);
 }
 
+.services .service-delivery
+{
+  background-image: url(../img/bg-services-delivery.png);
+  background-repeat: no-repeat;
+  background-position: 151px 22px;
+}
+
+.services .service-guarantee
+{
+  background-image: url(../img/bg-services-guarantee.png);
+  background-repeat: no-repeat;
+  background-position: 239px 0;
+}
+
+.services .service-credit
+{
+  background-image: url(../img/bg-services-credit.png);
+  background-repeat: no-repeat;
+  background-position: 165px 0;
+}
+
 /* ABOUT US */
 .about-us ul
 {
@@ -515,6 +539,12 @@ a
 	line-height: 30px;
   text-transform: uppercase;
   background-color: var(--color-almost-white);
+}
+
+.breadcrumbs .home
+{
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
 }
 
 /* FILTER */
@@ -653,7 +683,10 @@ a
 {
 	background-color: var(--basic-green);
 	box-shadow: inset 0px -3px 0px var(--color-green-shadow);
-	border-radius: 2px;
+  border-radius: 2px;
+  background-image: url(../img/icon-cart.svg);
+  background-position: 30px 10px;
+  background-repeat: no-repeat;
 }
 
 .item .button-buy:hover
