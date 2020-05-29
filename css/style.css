@@ -636,7 +636,7 @@ a
 {
 	border: 1px solid var(--color-extralight-grey);
 	width: 220px;
-	height: 318px;
+	min-height: 318px;
 }
 
 .items-list .item:hover
@@ -670,13 +670,11 @@ a
 
 .item .price
 {
-	width: 141px;
-	height: 38px;
-	background-image: url(../img/red-button.svg);
-	background-repeat: no-repeat;
+	padding: 10px 0 10px;
+	width: 120px;
+	background-color: var(--basic-red);
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 10px;
 }
 
 .item .button-buy
