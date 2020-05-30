@@ -349,6 +349,7 @@ a
 	min-height: 18px;
 	width: 210px;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -420,8 +421,8 @@ a
 	min-height: 60px;
 	margin: 0;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0 28px;
+	flex-wrap: wrap;
+	padding: 0 26px;
 	padding-bottom: 5px;
 }
 
@@ -727,6 +728,12 @@ a
 	display: flex;
 	padding-top: 21px;
 	margin-bottom: 20px;
+}
+
+.breadcrumbs-navigation
+{
+	grid-column-start: 1;
+	grid-column-end: -1;
 }
 
 .breadcrumbs li
