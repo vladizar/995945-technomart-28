@@ -137,6 +137,14 @@ body
 	align-content: start;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .hidden
 {
   display: none;
@@ -221,7 +229,6 @@ a
 	font-size: 18px;
 	background-color: var(--basic-background);
   padding-bottom: 60px;
-  margin-bottom: 60px;
 }
 
 .header p
@@ -270,14 +277,17 @@ a
 .user-navigation a
 {
 	width: 150px;
-	padding: 9px;
-	padding-right: 0;
+  padding: 9px;
+  padding-right: 0;
+  display: block;
 }
 
-.user-navigation .logo
+.user-navigation .logo,
+.logo img
 {
 	width: 220px;
-	padding: 0;
+  padding: 0;
+  display: block;
 }
 
 .user-navigation .order:active,
@@ -285,7 +295,6 @@ a
 {
 	background-color: var(--basic-green);
 	padding-left: 19px;
-	padding-right: 16px;
 }
 
 .user-navigation .order:hover
@@ -464,7 +473,8 @@ a
 	background-color: var(--basic-grey-extra-dark);
 	border: 0;
 	font: inherit;
-	padding-left: 42px;
+  padding-left: 42px;
+  border-radius: 0;
 }
 
 .header .search-field-form
@@ -485,7 +495,7 @@ a
 {
   color: var(--color-white);
   font-family: var(--cuprum);
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 
 .promo-block .articles-wrapper
@@ -1271,7 +1281,6 @@ a
 	display: flex;
 	justify-content: space-between;
 	min-height: 193px;
-	margin-bottom: 54px;
 }
 
 .footer-top .footer-top-contacts
