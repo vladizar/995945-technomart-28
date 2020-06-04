@@ -1607,12 +1607,13 @@ input[type="radio"]:checked + label::before
 .item .item-picture
 {
   width: 100%;
-  min-height: 184px;
+  min-height: 179px;
   display: flex;
   justify-content: center;
   align-items: center;
 	margin-top: -5px;
 	margin-left: -5px;
+	margin-bottom: 5px;
 }
 
 .item:hover .item-actions
