@@ -932,16 +932,14 @@ a
 .popular-manufacturers-list .manufacturer-item
 {
   border: 1px solid var(--color-extralight-grey);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 145px;
 }
 
-.manufacturer-item a,
-.manufacturer-item img
+.manufacturer-item a
 {
-  display: block;
+	min-height: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .popular-manufacturers-list .manufacturer-item:hover
@@ -1593,56 +1591,33 @@ input[type="radio"]:checked + label::before
 {
 	box-shadow: 0px 4px 20px var(--color-black-mostly-transparent);
 }
-/* 
-.items-list .new::after
-{
-  content: "new";
-  display: flex;
-  width: 100px;
-  height: 30px;
-  text-transform: uppercase;
-  transform: rotate(45deg);
-  background-color: var(--basic-red);
-  font-family: var(--cuprum);
-  font-size: 14px;
-  line-height: 18px;
-  position: absolute;
-  top: 5px;
-  right: -25px;
-  padding-left: 5px;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-white);
-} */
 
 .item .item-actions
 {
-  display: none;
   width: 100%;
   min-height: 179px;
-  padding-top: 38px;
+	padding-top: 38px;
+	position: absolute;
+	background-color: var(--color-white);
+	top: 0;
+	left: 0;
+  display: none;
 }
 
 .item .item-picture
 {
   width: 100%;
-  min-height: 179px;
+  min-height: 184px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -5px;
-  left: -5px;
+	margin-top: -5px;
+	margin-left: -5px;
 }
 
 .item:hover .item-actions
 {
-  display: block;
-}
-
-.item:hover .item-picture
-{
-  display: none;
+	display: block;
 }
 
 .item h3
