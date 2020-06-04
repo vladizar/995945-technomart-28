@@ -459,14 +459,18 @@
 
 		<!--POP UPS-->
 
-		<section class="hidden added-to-cart-message">
+		<section class="hidden popup-added-to-cart">
 			<h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
-			<button type="button">Закрыть</button>
+			<button type="button" class="button-close" aria-label="Закрыть"></button>
 
 			<p>Товар добавлен в корзину!</p>
 
-			<a href="#">Оформить заказ</a>
-			<button type="button">Продолжить покупки</button>
+      <div class="button-wrapper">
+        <div class="container">
+          <a href="#" class="button">Оформить заказ</a>
+          <button type="button" class="button">Продолжить покупки</button>
+        </div>
+      </div>
 		</section>
   </body>
 </html>
