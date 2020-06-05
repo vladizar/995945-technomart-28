@@ -2048,16 +2048,17 @@ input[type="radio"]:checked + label::before
   width: 460px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 39px;
+  padding-top: 40px;
   justify-content: space-between;
-  margin: 0 auto;
+	margin: 0 auto;
+	margin-bottom: 15px;
 }
 
 .popup-feedback p
 {
   margin: 0;
   width: 220px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .popup-feedback p:last-of-type
@@ -2071,7 +2072,8 @@ input[type="radio"]:checked + label::before
   width: 100%;
   border-radius: 2px;
   border: 2px solid var(--basic-greylight);
-  padding: 7px 8px 7px 12px;
+	padding: 10px 8px 10px;
+	padding-left: 11px;
 }
 
 .popup-feedback textarea
@@ -2086,7 +2088,7 @@ input[type="radio"]:checked + label::before
   font-size: 18px;
   line-height: 24px;
   display: block;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -2096,9 +2098,6 @@ input[type="radio"]:checked + label::before
   width: 100%;
   min-height: 112px;
   padding: 37px 80px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .popup-feedback .button
@@ -2150,7 +2149,7 @@ input[type="radio"]:checked + label::before
   min-height: 282px;
   border-top: 7px solid var(--basic-red);
 	box-shadow: 0px 4px 20px var(--color-black-mostly-transparent);
-	padding-top: 66px;
+	padding-top: 67px;
 }
 
 .popup-added-to-cart .button-close
@@ -2170,12 +2169,13 @@ input[type="radio"]:checked + label::before
 .popup-added-to-cart p
 {
 	margin: 0 auto;
-	width: 270px;
+	width: 268px;
 	font-family: var(--cuprum);
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
 	position: relative;
+	margin-bottom: 66px;
 }
 
 .popup-added-to-cart p::before
@@ -2189,8 +2189,8 @@ input[type="radio"]:checked + label::before
 	background-image: url(../img/icon-mark.svg);
 	background-repeat: no-repeat;
 	position: absolute;
-	left: -88px;
-	top: -20px;
+	left: -95px;
+	top: -19px;
 }
 
 .popup-added-to-cart .button-wrapper
@@ -2199,9 +2199,6 @@ input[type="radio"]:checked + label::before
   width: 100%;
   min-height: 112px;
   padding: 37px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .popup-added-to-cart .button
