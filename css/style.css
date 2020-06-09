@@ -927,7 +927,7 @@ a:not([href])
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 220px);
-  gap: 20px;
+	gap: 20px;
 }
 
 .popular-items .items-list
@@ -935,7 +935,8 @@ a:not([href])
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .popular-manufacturers-list .manufacturer-item
