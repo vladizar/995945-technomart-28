@@ -951,7 +951,7 @@ a:not([href])
 
 .manufacturer-item a
 {
-	min-height: 145px;
+	min-height: 143px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1608,7 +1608,7 @@ input[type="radio"]:focus + label
 	margin: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 220px);
-	grid-row-gap: 18px;
+	grid-row-gap: 17px;
 	grid-column-gap: 20px;
 	margin-bottom: 48px;
 }
