@@ -35,6 +35,7 @@
 	--color-lightest-grey: #E5E5E5;
 	--color-white-dark: #F7F3EC;
 	--color-almost-white: #F2F6F8;
+	--color-bg-brown: rgb(143, 65, 34);
   --color-white-half-transparent: rgba(255, 255, 255, 0.5);
   --color-white-almost-transparent: rgba(255, 255, 255, 0.3);
   --color-gray-almost-white: rgba(171, 171, 171, 0.3);
@@ -45,68 +46,68 @@
 
 	/* FONTS */
 	--cuprum: Cuprum, Arial, sans-serif;
-	--pt-sans: 'PT Sans', Arial, sans-serif;
+	--pt-sans: "PT Sans", Arial, sans-serif;
 }
 
 /* FONTS */
 @font-face
 {
-	font-family: 'Cuprum';
+	font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: local('Cuprum'),
-       url('../fonts/cuprum.woff2') format('woff2'), 
-       url('../fonts/cuprum.woff') format('woff');
+  src: local("Cuprum"),
+       url("../fonts/cuprum.woff2") format("woff2"), 
+       url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: 'Cuprum';
+	font-family: "Cuprum";
   font-style: italic;
   font-weight: 400;
-  src: local('Cuprum Italic'),
-       url('../fonts/cuprumitalic.woff2') format('woff2'), 
-       url('../fonts/cuprumitalic.woff') format('woff');
+  src: local("Cuprum Italic"),
+       url("../fonts/cuprumitalic.woff2") format("woff2"), 
+       url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: 'Cuprum';
+	font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
-  src: local('Cuprum Bold'),
-       url('../fonts/cuprumbold.woff2') format('woff2'), 
-       url('../fonts/cuprumbold.woff') format('woff');
+  src: local("Cuprum Bold"),
+       url("../fonts/cuprumbold.woff2") format("woff2"), 
+       url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: 'Cuprum';
+	font-family: "Cuprum";
   font-style: italic;
   font-weight: 700;
-  src: local('Cuprum Bold Italic'),
-       url('../fonts/cuprumbolditalic.woff2') format('woff2'), 
-       url('../fonts/cuprumbolditalic.woff') format('woff');
+  src: local("Cuprum Bold Italic"),
+       url("../fonts/cuprumbolditalic.woff2") format("woff2"), 
+       url("../fonts/cuprumbolditalic.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: 'PT Sans';
+	font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'),
-       url('../fonts/ptsans.woff2') format('woff2'), 
-       url('../fonts/ptsans.woff') format('woff');
+  src: local("PT Sans"),
+       url("../fonts/ptsans.woff2") format("woff2"), 
+       url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: 'PT Sans';
+	font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'),
-       url('../fonts/ptsansbold.woff2') format('woff2'), 
-       url('../fonts/ptsansbold.woff') format('woff');
+  src: local("PT Sans Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"), 
+       url("../fonts/ptsansbold.woff") format("woff");
 }
 
 /* GLOBAL STYLES */
@@ -187,6 +188,7 @@ a
 	text-transform: uppercase;
 	color: var(--basic-grey-dark);
 	margin: 0;
+	width: 420px;
 }
 
 .button
@@ -437,7 +439,6 @@ a:not([href])
 	background-position: 36px 10px;
 	width: 270px;
 	min-height: 45px;
-	padding: 4px 42px 5px 71px;
 	margin: 0;
 	margin-bottom: 3px;
 }
@@ -448,6 +449,10 @@ a:not([href])
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
+	padding: 4px 42px 5px 71px;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .header .address
@@ -848,14 +853,14 @@ a:not([href])
 
 .slider .promo-perforators
 {
-  background-color: var(--color-black-extra-light);
+  background-color: var(--color-bg-brown);
   background-image: url(../img/bg-slider-perforators.jpg);
   background-repeat: no-repeat;
 }
 
 .slider .promo-drills
 {
-  background-color: var(--color-black-extra-light);
+  background-color: var(--color-bg-brown);
   background-image: url(../img/bg-slider-drill.jpg);
   background-repeat: no-repeat;
 }
@@ -1438,7 +1443,21 @@ input[type="checkbox"] + label::before
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+	background-position: 0 0;
+	opacity: 0.78;
+}
+
+input[type="checkbox"]:not(:disabled) + label:hover::before,
+input[type="radio"]:not(:disabled) + label:hover::before
+{
+	opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label
+{
+	opacity: 0.3;
+	cursor: not-allowed;
 }
 
 input[type="checkbox"]:checked + label::before
@@ -1456,12 +1475,19 @@ input[type="radio"] + label::before
   height: 25px;
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+	background-position: 0 0;
+	opacity: 0.78;
 }
 
 input[type="radio"]:checked + label::before
 {
   background-image: url(../img/radio-on.svg);
+}
+
+input[type="checkbox"]:focus + label,
+input[type="radio"]:focus + label
+{
+	outline: -webkit-focus-ring-color auto 1px;
 }
 
 .manufacturers-list li,
@@ -1597,7 +1623,8 @@ input[type="radio"]:checked + label::before
   overflow: hidden;
 }
 
-.items-list .item:hover
+.items-list .item:hover,
+.items-list .item:focus
 {
 	box-shadow: 0px 4px 20px var(--color-black-mostly-transparent);
 }
@@ -1626,7 +1653,8 @@ input[type="radio"]:checked + label::before
 	margin-bottom: 5px;
 }
 
-.item:hover .item-actions
+.item:hover .item-actions,
+.item:focus-within .item-actions
 {
 	display: block;
 }
@@ -1875,6 +1903,7 @@ input[type="radio"]:checked + label::before
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-top-navigation .site-navigation-footer
