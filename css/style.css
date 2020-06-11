@@ -439,20 +439,13 @@ a:not([href])
 	background-position: 36px 10px;
 	width: 270px;
 	min-height: 45px;
-	margin: 0;
 	margin-bottom: 3px;
-}
-
-.phone a
-{
 	color: var(--basic-red);
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
 	padding: 4px 42px 5px 71px;
 	display: block;
-	width: 100%;
-	height: 100%;
 }
 
 .header .address
