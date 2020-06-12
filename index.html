@@ -72,16 +72,7 @@
           <h2 class="visually-hidden">Промо-блок</h2>
   
           <div class="articles-wrapper">
-            <div class="slider">
-              <article class="promo-perforators current">
-                <div class="title-with-paragraph">
-                  <h3>Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
-                </div>
-      
-                <a href="catalog.html" class="button">Открыть каталог</a>
-              </article>
-      
+            <div class="slider">   
               <article class="promo-drills">
                 <div class="title-with-paragraph">
                   <h3>Дрели</h3>
@@ -90,11 +81,20 @@
       
                 <a href="catalog.html" class="button">Открыть каталог</a>
               </article>
+
+              <article class="promo-perforators current">
+                <div class="title-with-paragraph">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                </div>
+      
+                <a href="catalog.html" class="button">Открыть каталог</a>
+              </article>
     
               <button class="next-slide" aria-label="Предидущий слайд" type="button"></button>
               <button class="previous-slide" aria-label="Следующий слайд" type="button"></button>
-              <button class="first-slide" aria-label="Первый слайд" type="button"></button>
-              <button class="second-slide current" aria-label="Второй слайд" type="button"></button>
+              <button class="first-slide page-control" aria-label="Первый слайд" type="button"></button>
+              <button class="second-slide page-control current" aria-label="Второй слайд" type="button"></button>
             </div>
     
             <article class="promo-materials new">
@@ -279,7 +279,7 @@
             </ul>
 
             <div class="services-description">
-              <div class="service-delivery current">
+              <div class="service-delivery">
                 <h3 class="section-title2">Доставка</h3>
       
                 <p>
@@ -293,25 +293,23 @@
                 
               </div>
       
-              <div class="service-guarantee">
+              <div class="hidden service-guarantee">
                 <h3 class="section-title2">Гарантия</h3>
       
                 <p>
                   Если купленный у нас товар поломается или заискрит, 
                   а также в случае пожара, спровоцированного его 
-                  возгоранием,  вы всегда можете быть уверены в нашей 
+                  возгоранием, вы всегда можете быть уверены в нашей 
                   гарантии. Мы обменяем сгоревший товар на новый. 
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
       
-              <div class="service-credit">
+              <div class="hidden service-credit">
                 <h3 class="section-title2">Кредит</h3>
-      
-                <p>
-                  Залезть в долговую яму стало проще! 
-                  Кредитные консультанты придут вам на помощь.
-                </p>
+                
+                <p>Залезть в долговую яму стало проще!</p> 
+                <p>Кредитные консультанты придут вам на помощь.</p>
       
                 <a href="#" class="button">Отправить заявку</a>
               </div>
@@ -356,7 +354,7 @@
               <img src="img/google-map.png" alt="Карта с указателем местонахождения компании «Техномарт»: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
             </a>
             
-            <a href="#" class="button">Заблудились? Напишите нам</a>
+            <a href="#" class="button write-us">Заблудились? Напишите нам</a>
           </section>
         </div>
       </div>
@@ -436,17 +434,17 @@
         <div class="container">
           <p>
             <label for="feedback-name">Ваше имя:</label>
-            <input type="text" placeholder="Имя Фамилия" id="feedback-name" name="name" required>
+            <input type="text" placeholder="Имя Фамилия" id="feedback-name" name="name">
           </p>
           
           <p>
             <label for="feedback-email">Ваш e-mail:</label>
-            <input type="email" placeholder="email@example.com" id="feedback-email" name="email" required>
+            <input type="email" placeholder="email@example.com" id="feedback-email" name="email">
           </p>
           
           <p>
             <label for="feedback-message">Текст письма:</label>
-            <textarea placeholder="В свободной форме" id="feedback-message" name="message" required></textarea>
+            <textarea placeholder="В свободной форме" id="feedback-message" name="message"></textarea>
           </p>
         </div>
 
@@ -462,5 +460,7 @@
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.32085871617607!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1590240762777!5m2!1sru!2sua" width="943" height="442" allowfullscreen aria-hidden="false" tabindex="0" title="Большая интерактиваня карта с указателем местонахождения компании «Техномарт»: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 "></iframe>
     </section>
+
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>

@@ -761,11 +761,6 @@ a:not([href])
   display: none;
 }
 
-.slider .current
-{
-  display: flex;
-}
-
 .slider h3
 {
   font-size: 36px;
@@ -828,14 +823,15 @@ a:not([href])
   cursor: pointer;
 }
 
+.slider .current
+{
+	display: flex;
+	background-color: var(--basic-red);
+}
+
 .slider .first-slide
 {
   left: 295px;
-}
-
-.slider .current
-{
-  background-color: var(--basic-red);
 }
 
 .slider .button
@@ -1031,7 +1027,7 @@ a:not([href])
 
 .services-description p
 {
-	width: 340px;
+	width: 280px;
 	margin-bottom: 0;
 }
 
@@ -1069,12 +1065,6 @@ a:not([href])
   background-repeat: no-repeat;
   background-position: 151px 22px;
   margin-top: -2px;
-  display: none;
-}
-
-.service-delivery p
-{
-  width: 280px;
 }
 
 .service-delivery p:last-of-type
@@ -1086,21 +1076,36 @@ a:not([href])
 {
   background-image: url(../img/bg-services-guarantee.png);
   background-repeat: no-repeat;
-  background-position: 239px 0;
-  display: none;
+	background-position: 239px 0;
+	padding-top: 4px;
+	width: 640px;
+}
+
+.service-guarantee .section-title2
+{
+	margin-bottom: 24px;
+}
+
+.service-guarantee p
+{
+  width: 315px;
 }
 
 .services .service-credit
 {
   background-image: url(../img/bg-services-credit.png);
   background-repeat: no-repeat;
-  background-position: 165px 0;
-  display: none;
+	background-position: 165px 0;
+	width: 640px;
 }
 
-.services .current
+.service-credit .button
 {
-  display: block;
+	display: block;
+	margin-top: 25px;
+	width: 195px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* ABOUT US and CONTACTS*/
@@ -2235,4 +2240,65 @@ input[type="radio"]:focus + label
 {
 	background-color: var(--color-white);
 	color: var(--color-black);
+}
+
+.popup-feedback,
+.popup-map,
+.popup-added-to-cart
+{
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce
+{
+	0%
+	{
+		transform: translateY(-2000px);
+	}
+
+	25%
+	{
+		transform: translateY(30px);
+	}
+
+	50%
+	{
+		transform: translateY(-10px);
+	}
+
+	100%
+	{
+		transform: translateY(0);
+	}
+}
+
+.popup-error
+{
+	animation: shake 0.6s;
+}
+
+@keyframes shake
+{
+	0%,
+	100% 
+	{
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+	90% 
+	{
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+	80% 
+	{
+    transform: translateX(10px);
+  }
 }
