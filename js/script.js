@@ -1,50 +1,59 @@
-// If on catalog.html page
-if (document.querySelector('.logo[href]')) 
+// POPUP ADDED TO CART
+
+// Store cart items number
+let cartItemsNumber = 0;
+
+// Find all needed DOM elements
+const popupAddedToCart = document.querySelector('.popup-added-to-cart');
+const popupAddedToCartOpenButtons = document.querySelectorAll('.button-buy');
+const popupAddedToCartCloseButtons = popupAddedToCart.querySelectorAll('button');
+const cartButton = document.querySelector('.cart');
+
+for (const popupAddedToCartOpenButton of popupAddedToCartOpenButtons) 
 {
-    // CATALOG.HTML
-
-    // POPUP ADDED TO CART
-
-    // Find all needed DOM elements
-    const popupAddedToCart = document.querySelector('.popup-added-to-cart');
-    const popupAddedToCartOpenButtons = document.querySelectorAll('.button-buy');
-    const popupAddedToCartCloseButton = popupAddedToCart.querySelector('.button-close');
-
-    for (const popupAddedToCartOpenButton of popupAddedToCartOpenButtons) 
+    // When popup open button is pressed
+    popupAddedToCartOpenButton.onclick = function (evt) 
     {
-        // When popup open button is pressed
-        popupAddedToCartOpenButton.onclick = function (evt) 
-        {
-            // Stop browser from following the link
-            evt.preventDefault();
+        // Stop browser from following the link
+        evt.preventDefault();
 
-            // Show popup
-            popupAddedToCart.classList.remove('hidden');   
-        }
+        // Show popup
+        popupAddedToCart.classList.remove('hidden'); 
+        
+        // Increase cart items number
+        cartItemsNumber++;
+
+        // Show user filled cart, and number of items
+        cartButton.classList.add('filled');
+        cartButton.textContent = 'Корзина: ' + cartItemsNumber;
     }
+}
 
+for (const popupAddedToCartCloseButton of popupAddedToCartCloseButtons) 
+{
     // When popup close button is pressed
     popupAddedToCartCloseButton.onclick = function (evt) 
     {
         // Hide popup
         popupAddedToCart.classList.add('hidden');    
     }
-
-    // ALL POPUPS
-
-    // When users pressed the key on keyboard
-    window.onkeydown = function (evt)
-    {
-        // If popup is now shown and user pressed Escape key
-        if (!popupAddedToCart.classList.contains('hidden') && evt.key == 'Escape') 
-        {
-            // Hide popup
-            popupAddedToCart.classList.add('hidden');  
-        }   
-    }       
 }
+
+// ALL POPUPS
+
+// When users pressed the key on keyboard
+window.onkeydown = function (evt)
+{
+    // If popup is now shown and user pressed Escape key
+    if (!popupAddedToCart.classList.contains('hidden') && evt.key == 'Escape') 
+    {
+        // Hide popup
+        popupAddedToCart.classList.add('hidden');  
+    }   
+}       
+
 // If on index.html page
-else
+if (!document.querySelector('.logo[href]')) 
 {
     // INDEX.HTML
 
@@ -59,8 +68,8 @@ else
     const popupFeedbackTextArea = popupFeedbackForm.querySelector('textarea');
 
     // Variables for autofill form fields
-    let username = "";
-    let email = "";
+    let username = '';
+    let email = '';
     let isStorageSupport = true;
 
     // Get variables values from local storage, if exists
@@ -185,7 +194,7 @@ else
 
             // Hide current slider page
             servicesListLinks[servicesSliderCurrentIndex].classList.remove('active');
-            servicesListLinks[servicesSliderCurrentIndex].href = "#";
+            servicesListLinks[servicesSliderCurrentIndex].href = '#';
             servicesListBlocks[servicesSliderCurrentIndex].classList.add('hidden');
 
             // Set current slider page number to new page number
