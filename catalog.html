@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-		<title>HTML Academy: Техномарт. Каталог</title>
-		<link rel="stylesheet" href="css/normalize.min.css">
+    <title>HTML Academy: Техномарт. Каталог</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-		<header class="header">
+    <header class="header">
       <div class="user-navigation">
         <div class="wrapper">
           <a class="logo" href="index.html">
@@ -74,7 +74,7 @@
       </div>
     </header>
 
-		<main>
+    <main>
       <div class="wrapper catalog-wrapper">
         <nav class="breadcrumbs-navigation">
           <ol class="breadcrumbs">
@@ -110,9 +110,11 @@
               </div>
     
               <div class="range-inputs">
-                <input type="text" name="price-min" id="filter-price-min" value="0" aria-label="Минимальная цена" required>
+                <label for="filter-price-min" class="visually-hidden">Минимальная цена</label>
+                <input type="text" name="price-min" id="filter-price-min" value="0" required>
                 <span>-</span>
-                <input type="text" name="price-max" id="filter-price-max" value="30000" aria-label="Максимальная цена" required>
+                <label for="filter-price-max" class="visually-hidden">Максимальная цена</label>
+                <input type="text" name="price-max" id="filter-price-max" value="30000" required>
               </div>
             </fieldset>
     
@@ -381,7 +383,7 @@
         </div>
       </div>
 
-			<section class="few-words">
+      <section class="few-words">
         <div class="wrapper">
           <h2 class="section-title">Пара слов о перфораторах</h2>
 
@@ -389,8 +391,8 @@
           <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p> 
           <p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
-			</section>
-		</main>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-top">
@@ -457,13 +459,13 @@
       </div>
     </footer>
 
-		<!--POP UPS-->
+    <!--POP UPS-->
 
-		<section class="hidden popup-added-to-cart">
-			<h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
-			<button type="button" class="button-close" aria-label="Закрыть"></button>
+    <section class="hidden popup-added-to-cart">
+      <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+      <button type="button" class="button-close" aria-label="Закрыть"></button>
 
-			<p>Товар добавлен в корзину!</p>
+      <p>Товар добавлен в корзину!</p>
 
       <div class="button-wrapper">
         <div class="container">
