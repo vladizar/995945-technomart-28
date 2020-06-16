@@ -1012,6 +1012,7 @@ a:not([href])
   padding: 0;
   width: 240px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 .services .services-list::after
