@@ -984,6 +984,7 @@ a:not([href])
 .services .services-description
 {
   width: 620px;
+  min-height: 285px;
 }
 
 .services-description div
@@ -1119,7 +1120,7 @@ a:not([href])
 {
   display: flex;
   justify-content: space-between;
-  padding: 72px 0 70px;
+  padding: 70px 0 69px;
 }
 
 .two-sections .section-title
